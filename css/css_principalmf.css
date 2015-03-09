@@ -1,0 +1,151 @@
+@charset "UTF-8"; 
+
+*{
+	font-size: 16px;
+}
+	
+header, nav, div, article, aside, footer {
+	float: left;
+}
+
+
+body {
+	margin:0px;
+	padding:0px;
+}
+
+header {
+	background-color: #CCC;
+	padding: 8px 0px 8px 16px;
+	font-size: 3em;
+	font-weight: bold;
+	width: 100%;
+}
+
+h1{
+	font-size: 1.5em;
+}
+
+h2{
+	font-size: 1.38em;
+}
+
+nav {
+	background-color: black;
+	width: 100%;
+	font-size: 1em;
+	margin-top:0%;
+}
+
+
+article {
+	width: 100%;
+	font-size: 1em;
+}
+
+aside {
+	display: none;
+}
+
+img {
+	width: 50%;
+}
+
+footer nav{
+	margin-top: 10px;
+}
+	
+p{
+	text-align: justify;
+	font-size: 2em;
+}
+	
+footer {
+	width: 100%;
+	text-align: center;
+	background-color: black;
+}
+
+.logo {
+	width: 20%;
+}
+
+.eslogan  h1{
+	float: center;
+}
+
+.menu li{
+	border-right: solid 2px white;
+	padding-left: 3%;
+	float: left;
+	width:100%;
+}
+	
+.menu li a{
+	color: white;
+	font-size: 3em;
+}
+
+/*
+@media only screen and (min-device-width: 341px) {
+
+	header {
+		padding: 8px 0px 8px 22px;
+		font-size: 2em;
+		position: static;
+		float: left;
+	}
+
+	nav { 
+		margin-top: 0%;
+		width: 100%;
+	}
+
+	article {
+		padding-left: 2%;
+		width: 58%;
+		font-size: 1em;
+	}
+
+	aside {
+		display: initial;
+		padding-left: 5%;
+		width: 35%;
+		font-size: 1em;
+	}
+
+	img {
+		width: 50%;
+	}
+
+	footer {
+		width: 100%;
+		text-align: center;
+		background-color: black;
+	}
+
+	p{
+		text-align: justify;
+		font-size: 1em;
+	}
+
+
+	.menu li{
+		float: none;
+		display: inline;
+		border-right: solid 2px white;
+		padding: 3px;
+	}
+	
+	.menu li a{
+		font-size: 1em;
+	}
+
+}
+/**/
+
+
+
+
+
+

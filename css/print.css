@@ -1,0 +1,7 @@
+header, nav, footer{
+	display:none;
+}
+
+article, aside{
+	width: 100%;
+}
