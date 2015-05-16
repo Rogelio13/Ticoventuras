@@ -1,10 +1,12 @@
 .carousel-inner > .item > img,
 		  .carousel-inner > .item > a > img {
 			  margin: auto;
-			  width: 100%;
-			  height: 50%;
 		  }
-		  
+
+.altura{
+	height: 100px;
+}		  
+
 #myCarousel{
-	width:70%;
+	margin: auto;
 }
