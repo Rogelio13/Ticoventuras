@@ -59,6 +59,7 @@
 		<!--CUERPO-->
 		<div class="container-fluid">
 			<div class="row">
+				<!-- breadcrumb añadido -->
 				<ol class="breadcrumb">
 					<li>
 						<i class="icon-large icon-home"></i>
@@ -67,7 +68,112 @@
 					<li><strong><a href="#">Cont&aacute;ctenos</a></strong></li>
 				</ol>
 			</div>
-		</div>	
+		</div>
+	
+		<!--contenedor para el form de contactenos-->
+		<div class="container">
+			<form method="POST" id="formContact">
+				<div class="row">
+					<div class="alert alert-danger col-md-6 col-md-offset-3 hidden"> <!--alertas de mensajes de validacion-->
+					
+					</div>
+					<div class="alert alert-success col-md-6 col-md-offset-3 hidden"> <!--alertas de mensajes de validacion-->
+						<strong>Validacion correcta.</strong> Los datos ingresados son correctos, puede enviar los datos.
+					</div>
+				</div>
+				<!--inputs-->
+				<div class="row">
+					<div class="form-group col-md-6 col-md-offset-3">
+						<span class="required">*</span>
+						<label for="nombre">Nombre</label>
+						<input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre...">
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-6 col-md-offset-3">
+						<span class="required">*</span>
+						<label for="apellido1">Primer apellido</label>
+						<input type="text" class="form-control" id="apellido1" placeholder="Ingrese su apellido...">
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-6 col-md-offset-3">
+						<label for="apellido2">Segundo apellido</label>
+						<input type="text" class="form-control" id="apellido2" placeholder="Ingrese su apellido...">
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-6 col-md-offset-3">
+						<span class="required">*</span>
+						<label for="telefono">Tel&eacute;fono</label>
+						<input type="text" class="form-control" id="telefono" placeholder="Ingrese su telefono..." aria-describedby="helpBlockTel">
+						<span id="helpBlockTel" class="help-block">S&oacute;lo n&uacute;meros.</span>
+					</div> 
+				</div>
+				<div class="row">
+					<div class="form-group col-md-6 col-md-offset-3">
+						<span class="required">*</span>
+						<label for="email">Email</label>
+						<input type="text" class="form-control" id="email" placeholder="Ingrese su email...">
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-6 col-md-offset-3">
+						<span class="required">*</span>
+						<label for="emailConf">Email</label>
+						<input type="text" class="form-control" id="emailConf" placeholder="Confirme su email...">
+					</div>
+				</div>
+				 
+				<div class="row">
+					<div class="form-group col-md-6 col-md-offset-3">
+						<span class="required">*</span>
+						<label for="formaContacto">&iquest;C&oacute;mo desea ser contactado?</label>
+						<select multiple class="form-control" id="formaContacto">
+							<option>Tel&eacute;fono</option>
+							<option>Email</option>
+						</select>
+						<span id="helpBlockFormaContacto" class="help-block">Puede seleccionar ambas.</span>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group col-md-6 col-md-offset-3">
+						<span class="required">*</span>
+						<label for="comentario">Comentarios</label>
+						<textarea id="comentario" class="form-control" rows="3" placeholder="Escriba su comentario..."></textarea>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group col-md-6 col-md-offset-3">
+						<!-- el submit del form tendra asociado el modal que abrira cuando no este validado o correctos los campos-->
+						<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modalContacto">Enviar</button>
+						<button type="button" id="limpiarForm" class="btn btn-default">Cancelar</button>
+					</div>
+				</div>
+			</form>		
+		</div>
+		
+		<!--modal-->
+		<!--seccion del modal en html-->
+		<div class="modal fade" id="modalContacto">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Error</h4>
+					</div>
+					<div class="modal-body">
+						<p>Formulario incompleto o con datos no v&aacute;lidos, no se puede enviar.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		
 	</div>
 	
 </body>	
@@ -118,6 +224,11 @@
 	
 	
 	<!-- scripts de la página -->
-	
+	<script src="js/carousel/jquery.min.js"></script>
+    <script src="js/carousel/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/carousel/holder.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/carousel/ie10-viewport-bug-workaround.js"></script>
 	
 </html>
