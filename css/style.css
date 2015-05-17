@@ -10,3 +10,29 @@
 #myCarousel{
 	margin: auto;
 }
+ 
+.backgroundLightGray{
+	background-color: #F0F0F0;
+}
+
+.backgroundLightBlue{
+	background-color: #1569C7;
+}
+
+footer h3 {
+	color: #FFFFFF;
+}
+
+footer p {
+	color: #FFFFFF;
+}
+
+footer ul li{
+	color: #FFFFFF;
+}
+
+footer a:link {color: #FFFFFF;}
+footer a:visited {color: #FFFFFF;}
+footer a:hover {color: #FFFFFF;}
+footer a:focus {color: #FFFFFF;}
+footer a:active {color: #FFFFFF;}
