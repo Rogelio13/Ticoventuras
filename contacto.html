@@ -70,89 +70,75 @@
 			</div>
 		</div>
 	
-		<!--contenedor para el form de contactenos-->
+		<!--contenedor para el form de contáctenos-->
 		<div class="container">
-			<form method="POST" id="formContact">
-				<div class="row">
-					<div class="alert alert-danger col-md-6 col-md-offset-3 hidden"> <!--alertas de mensajes de validacion-->
-					
-					</div>
-					<div class="alert alert-success col-md-6 col-md-offset-3 hidden"> <!--alertas de mensajes de validacion-->
-						<strong>Validacion correcta.</strong> Los datos ingresados son correctos, puede enviar los datos.
-					</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-3">
+					<form method="POST" id="formContact" class="form-horizontal">
+						<!--inputs-->
+						<div class="form-group">
+							<label for="nombre" class="col-md-3 control-label"><span class="required">*</span> Nombre</label>
+							<div class="col-md-5">
+								<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre...">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="apellido1" class="col-md-3 control-label"><span class="required">*</span> Primer apellido</label>
+							<div class="col-md-5">
+								<input type="text" class="form-control" id="apellido1" name="apellido1" placeholder="Ingrese su apellido...">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="apellido2" class="col-md-3 control-label"> Segundo apellido</label>
+							<div class="col-md-5">
+								<input type="text" class="form-control" id="apellido2" name="apellido2" placeholder="Ingrese su apellido...">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="tel" class="col-md-3 control-label"><span class="required">*</span> Tel&eacute;fono</label>
+							<div class="col-md-5">
+								<input type="text" class="form-control" id="tel" name="tel" placeholder="Ingrese su tel&eacute;fono..." aria-describedby="helpBlockTel">
+								<span id="helpBlockTel" class="help-block">S&oacute;lo n&uacute;meros.</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="email" class="col-md-3 control-label"><span class="required">*</span> Email</label>
+							<div class="col-md-5">
+								<input type="text" class="form-control" id="email" name="email" placeholder="Ingrese su Email..." aria-describedby="helpBlockEmail">
+								<span id="helpBlockEmail" class="help-block">Ejemplo: abcd@ticoventuras.com</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="emailConf" class="col-md-3 control-label"><span class="required">*</span> Confirme su email</label>
+							<div class="col-md-5">
+								<input type="text" class="form-control" id="emailConf" name="emailConf" placeholder="Confirme su email...">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="formaContacto" class="col-md-3 control-label"><span class="required">*</span> &iquest;C&oacute;mo desea ser contactado?</label>
+							<div class="col-md-5">
+								<select multiple class="form-control" id="formaContacto" name="formaContacto">
+									<option>Tel&eacute;fono</option>
+									<option>Email</option>
+								</select>
+								<span id="helpBlockFormaContacto" class="help-block">Puede seleccionar ambas.</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="comentario" class="col-md-3 control-label"><span class="required">*</span> Comentarios</label>
+							<div class="col-md-5">
+								<textarea id="comentario" name="comentario" class="form-control" rows="3" placeholder="Escriba su comentario..."></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-5 col-md-offset-3">
+								<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modalContacto9">Enviar</button>
+								<button type="button" id="limpiarForm" class="btn btn-default">Cancelar</button>
+							</div>
+						</div>
+					</form>
 				</div>
-				<!--inputs-->
-				<div class="row">
-					<div class="form-group col-md-6 col-md-offset-3">
-						<span class="required">*</span>
-						<label for="nombre">Nombre</label>
-						<input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre...">
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group col-md-6 col-md-offset-3">
-						<span class="required">*</span>
-						<label for="apellido1">Primer apellido</label>
-						<input type="text" class="form-control" id="apellido1" placeholder="Ingrese su apellido...">
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group col-md-6 col-md-offset-3">
-						<label for="apellido2">Segundo apellido</label>
-						<input type="text" class="form-control" id="apellido2" placeholder="Ingrese su apellido...">
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group col-md-6 col-md-offset-3">
-						<span class="required">*</span>
-						<label for="telefono">Tel&eacute;fono</label>
-						<input type="text" class="form-control" id="telefono" placeholder="Ingrese su telefono..." aria-describedby="helpBlockTel">
-						<span id="helpBlockTel" class="help-block">S&oacute;lo n&uacute;meros.</span>
-					</div> 
-				</div>
-				<div class="row">
-					<div class="form-group col-md-6 col-md-offset-3">
-						<span class="required">*</span>
-						<label for="email">Email</label>
-						<input type="text" class="form-control" id="email" placeholder="Ingrese su email...">
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group col-md-6 col-md-offset-3">
-						<span class="required">*</span>
-						<label for="emailConf">Email</label>
-						<input type="text" class="form-control" id="emailConf" placeholder="Confirme su email...">
-					</div>
-				</div>
-				 
-				<div class="row">
-					<div class="form-group col-md-6 col-md-offset-3">
-						<span class="required">*</span>
-						<label for="formaContacto">&iquest;C&oacute;mo desea ser contactado?</label>
-						<select multiple class="form-control" id="formaContacto">
-							<option>Tel&eacute;fono</option>
-							<option>Email</option>
-						</select>
-						<span id="helpBlockFormaContacto" class="help-block">Puede seleccionar ambas.</span>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="form-group col-md-6 col-md-offset-3">
-						<span class="required">*</span>
-						<label for="comentario">Comentarios</label>
-						<textarea id="comentario" class="form-control" rows="3" placeholder="Escriba su comentario..."></textarea>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="form-group col-md-6 col-md-offset-3">
-						<!-- el submit del form tendra asociado el modal que abrira cuando no este validado o correctos los campos-->
-						<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modalContacto">Enviar</button>
-						<button type="button" id="limpiarForm" class="btn btn-default">Cancelar</button>
-					</div>
-				</div>
-			</form>		
+			</div>	
 		</div>
 		
 		<!--modal-->
@@ -230,5 +216,19 @@
     <script src="js/carousel/holder.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/carousel/ie10-viewport-bug-workaround.js"></script>
+	
+	
+	<!-- scripts plugins JQuery encontrados-->
+	
+	<link rel="stylesheet" href="lib/formvalidation-master/vendor/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="lib/formvalidation-master/dist/css/formValidation.css"/>
+
+    <script type="text/javascript" src="lib/formvalidation-master/vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/formvalidation-master/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/formvalidation-master/dist/js/formValidation.js"></script>
+    <script type="text/javascript" src="lib/formvalidation-master/dist/js/framework/bootstrap.js"></script>
+	 
+	<!--plugin jquery con las validaciones de acuerdo al form requerido -->
+	<script type="text/javascript" src="validarFormContacto.js"></script>
 	
 </html>
