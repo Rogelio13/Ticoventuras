@@ -1,0 +1,4 @@
+El equipo de proyecto no posee derechos sobre dicha libería y le confiere los mismos a los autores de dicha libería
+para las validaciones.
+
+El autor y sus archivos se encuentran en la siguiente dirección: https://github.com/formvalidation/formvalidation
