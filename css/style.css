@@ -7,6 +7,8 @@
 .carousel-inner > .item > img,
 		  .carousel-inner > .item > a > img {
 			  margin: auto;
+			  overflow:hidden;
+			  height: 300px;
 		  }
 
 .altura{
