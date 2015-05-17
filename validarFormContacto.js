@@ -265,9 +265,19 @@ var verificarErrorValidacion = function(){ /*valida si hay errores para desplega
 	}
 }
 
+var resetForm = function(){ /*limpia los campos y áreas de error o éxito al dar click al botón cancelar del form*/
+	$("#formContact #limpiarForm").click(function(){
+        $('#formContact')
+            .formValidation('disableSubmitButtons', false)  // Enable the submit buttons
+            .formValidation('resetForm', true);             // Reset the form
+		$("html, body").animate({ scrollTop: 0 }, "slow"); /*se posiciona al inicio de la página*/
+    });
+}
+
 function readyValidar( jQuery ) { /*ejecuta los métodos que valida*/
 	validarForm();
 	validarSubmit();
+	resetForm();
 };
 
 $( document ).ready( readyValidar ); /*corre el js cuando carga el DOM.*/
