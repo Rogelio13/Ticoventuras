@@ -253,7 +253,7 @@ var validarSubmit=function(){ /*valida cuando se presiona el boton de enviar*/
 		e.preventDefault();	/*no se actualiza la página*/
 	});
 }
-
+ 
 var verificarErrorValidacion = function(){ /*valida si hay errores para desplegar o no mensaje de éxito*/
 	var formGroups = $('#formContact .form-group'); /*busca las áreas de inputs*/
 	if(formGroups.hasClass("has-error")){ /*si una de ellas tiene error...*/
