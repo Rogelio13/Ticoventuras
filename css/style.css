@@ -15,6 +15,8 @@
 
 #myCarousel{
 	margin: auto;
+	overflow: hidden;
+	height: 300px;
 }
  
 .backgroundLightGray{
