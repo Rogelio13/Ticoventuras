@@ -1,3 +1,9 @@
+@charset "UTF-8"; 
+/*establece a todo el documento una medida de pixeles base especifica*/
+*{
+	font-size: 14px; 
+} 
+
 .carousel-inner > .item > img,
 		  .carousel-inner > .item > a > img {
 			  margin: auto;
@@ -19,8 +25,67 @@
 	background-color: #1569C7;
 }
 
+.backgroundGreen{
+	background-color: #22E925;
+}
+
+.backgroundWhite{
+	background-color: #FFFFFF;
+}
+
+.fontLightBlue{
+	color: #1569C7;
+}
+
+.fontGreen{
+	color: #109812;
+}
+
 .required{
 	color: red;
+}
+
+.centrar{
+	text-align: center;
+}
+
+/*clase para el disenio del marco contenedor de los tabs*/
+/*El padding en .tab-content hace que el contenido no sea presionado contra los nuevos bordes en la derecha e izquierda.*/
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+/*establezco aspectos del padding que me ayuden a quedar mejor con el mock up*/
+.tab-content .jumbotron{
+	padding-top: 2% !important;
+	padding-left: 2% !important;
+	padding-right: 2% !important;
+	padding-bottom: 2% !important;
+}
+
+.tab-content .jumbotron p{ /*establezco el tamaño de la fuente para los párrafos de jumbotron*/
+	font-size: 0.9em;
+}
+
+.tab-content .jumbotron .tarifa p{ /*establezco el tamaño de la fuente para los párrafos de la columna de tarifas*/
+	font-size: 0.7em;
+}
+
+.tab-content .jumbotron .tarifa p strong{ /*establezco el tamaño de la fuente para los párrafos en negrita de la columna de tarifas*/
+	font-size: 4em !important;
+}
+
+.nav-tabs {
+    margin-bottom: 0; /*remueve el espacio entre el contenido y los tabs*/
+	padding-top: 35px;
+}
+
+#promociones{
+	padding-bottom: 40px;
+	padding-top: 40px;
 }
 
 footer h3 {
