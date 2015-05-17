@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    $('#formContact').formValidation({
+var validarForm = function(){ /*valida el form que se le indica con los campos necesarios y sus reglas*/
+	$('#formContact').formValidation({
         message: 'This value is not valid',
         icon: {
             valid: 'glyphicon glyphicon-ok',
@@ -24,7 +24,7 @@ $(document).ready(function() {
                     }
                 }
             },
-			nombre: {
+			nombre: { /*valida el campo de nombre*/
                 message: 'El nombre no es válido',
                 validators: {
                     notEmpty: {
@@ -41,7 +41,7 @@ $(document).ready(function() {
                     }
                 }
             },
-			apellido1: {
+			apellido1: { /*valida el campo de primer apellido*/
                 message: 'El apellido no es válido',
                 validators: {
                     notEmpty: {
@@ -58,24 +58,16 @@ $(document).ready(function() {
                     }
                 }
             },
-			apellido2: {
+			apellido2: { /*valida el campo de segundo apellido*/
                 message: 'El apellido no es válido',
                 validators: {
-                    notEmpty: {
-                        message: 'El apelido es requerido, no puede ser nulo'
-                    },
-                    stringLength: {
-                        min: 2,
-                        max: 35,
-                        message: 'El apellido debe ser mayor que 2 y menor que 35 caracteres de largo'
-                    },
                     regexp: {
                         regexp: /^([a-zA-Z]+\s)*[a-zA-Z]+$/,
                         message: 'El apellido solo puede consistir de letras y espacios en medio'
                     }
                 }
             },
-			comentario: {
+			comentario: { /*valida el campo de comentario*/
                 message: 'El comentario no es v&aacute;lido',
                 validators: {
                     notEmpty: {
@@ -102,7 +94,7 @@ $(document).ready(function() {
                     }
                 }
             }, 
-            email: {
+            email: { /*valida el campo de email*/
                 validators: {
                     notEmpty: {
                         message: 'La direcci&oacute;n de email es requerida, no puede ser nula'
@@ -112,7 +104,7 @@ $(document).ready(function() {
                     }
                 }
             },
-			emailConf: {
+			emailConf: { /*valida el campo de email de confirmación*/
                 validators: {
                     notEmpty: {
                         message: 'El correo de confirmaci&oacute;n es requerido, no puede ser nulo'
@@ -130,7 +122,7 @@ $(document).ready(function() {
                     }
                 }
             },
-			tel: {
+			tel: { /*valida el campo de teléfono*/
 				validators: {
 					regexp: {
                         regexp: /^[0-9]{8,8}$/,
@@ -209,7 +201,7 @@ $(document).ready(function() {
                     }
                 }
             },
-			formaContacto: {
+			formaContacto: { /*valida el campo de forma de contacto*/
                 validators: {
                     callback: {
                         message: 'Por favor escoja una o ambas opciones',
@@ -222,5 +214,60 @@ $(document).ready(function() {
                 }
             }
         }
-    });	
-});
+    })
+    .on('success.form.fv', function(e) { /*si hay éxito en el form se ejecuta lo necesario para limpiar y reiniciar los campos del mismo*/
+		// Prevent submit form
+        e.preventDefault();
+
+        var $form     = $(e.target),
+        validator = $form.data('formValidation');
+
+        // Show the modal
+        /*var fullName = [validator.getFieldElements('nombre').val(),
+                       validator.getFieldElements('apellido1').val()].join(' ');
+        $('#helloModal')
+            .find('.welcome').html('Hello ' + fullName).end()
+            .modal('show');
+		*/
+        $form
+            .formValidation('disableSubmitButtons', false)  // Enable the submit buttons
+            .formValidation('resetForm', true);             // Reset the form
+    });
+}
+
+var ocultarMsjExito = function(){ /*oculta el mensaje de exito al momento de validar*/
+	var div=$('.alert-success');
+	div.removeClass('show');
+	div.addClass('hidden');
+}
+
+var desplegarMsjExito = function(){ /*despliega el mensaje de exito al momento de validar*/
+	var div=$('.alert-success');
+	div.removeClass('hidden');
+	div.addClass('show');
+}
+
+var validarSubmit=function(){ /*valida cuando se presiona el boton de enviar*/
+	$("#formContact").submit(function (e) {
+		verificarErrorValidacion(); /*verifica si hay errores para desplegar o no mensaje de éxito*/
+		e.preventDefault();	/*no se actualiza la página*/
+	});
+}
+
+var verificarErrorValidacion = function(){ /*valida si hay errores para desplegar o no mensaje de éxito*/
+	var formGroups = $('#formContact .form-group'); /*busca las áreas de inputs*/
+	if(formGroups.hasClass("has-error")){ /*si una de ellas tiene error...*/
+		ocultarMsjExito(); /*oculta el mensaje de éxito*/
+	}
+	else{
+		desplegarMsjExito(); /*muestra el mensaje de éxito si no hay errores...*/
+		$("html, body").animate({ scrollTop: 0 }, "slow"); /*se posiciona al inicio de la página*/
+	}
+}
+
+function readyValidar( jQuery ) { /*ejecuta los métodos que valida*/
+	validarForm();
+	validarSubmit();
+};
+
+$( document ).ready( readyValidar ); /*corre el js cuando carga el DOM.*/
