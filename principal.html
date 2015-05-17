@@ -24,9 +24,9 @@
 	<title>Ticoventuras</title>
 </head>
 <body>
-	<div>
+	<div class="backgroundLightGray">
 	<!--MENU-->
-		<div name="menu" class="navbar navbar-inverse fixed-top">
+		<!--<div name="menu" class="navbar navbar-inverse navbar-fixed-top container-fluid">
 			<header class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span>
@@ -38,22 +38,75 @@
 				<p class="navbar-brand"><a href="principal.html">TICOVENTURAS</a></p>
 			</header>
 			<div class="collapse navbar-collapse">
-				<nav>
-					<ul class="nav navbar-nav">
-						<li><a href="index.php" class="homeIcon">Home</a></li>
-						<li><a href="#About">About</a></li>
-						<li><a href="#Services">Services</a></li>
-					</ul>
-				</nav>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<p class="navbar-btn">
+							<a href="#" class="btn btn-primary">Registrarse</a>
+						</p>
+					</li>
+					<li>
+						<p class="navbar-btn">
+							<a href="#" class="btn btn-default">Ingresar</a>
+						</p>
+					</li>
+				</ul><!--
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#About">About</a></li>
+					<li><a href="#Services">Services</a></li>
+				</ul>
+				
+				<!--
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#" class="icon-button linkedin"><i class="icon-linkedin"></i><span></span></a></li>
 					<li><a href="#" class="icon-button pinterest"><i class="icon-pinterest"></i><span></span></a></li>
 					<li><a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a></li>
 					<li><a href="#" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a></li>
 					<li><a href="#" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a></li>
+				</ul>-->
+			<!--</div>-->
+		<!--</div>-->
+		
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="img/oie_transparent.png"></a>
+					<p class="navbar-brand"><a href="principal.html">TICOVENTURAS</a></p>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#Services">&iquest;Qui&eacute;nes somos?</a></li>
+					<li><a href="#Services">Paquetes</a></li>
+					<li><a href="#Services">Promociones</a></li>
+					<li><a href="#About">Cont&aacute;ctenos</a></li>
 				</ul>
+				
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#">Iniciar Sesion</a></li>
+					<li><a href="#">Registrarse</a></li>
+					<!--<li><a href="#" class="icon-button linkedin"><i class="icon-linkedin"></i><span></span> Linkedin</a></li>
+					<li><a href="#" class="icon-button pinterest"><i class="icon-pinterest"></i><span> Pinterest</span></a></li>
+					<li><a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span> Twitter</a></li>
+					<li><a href="#" class="icon-button facebook"><i class="icon-facebook"></i><span></span> FB</a></li>
+					<li><a href="#" class="icon-button google-plus"><i class="icon-google-plus"></i><span> Google Plus</span></a></li>
+					<!--<li>
+						<a href="#" class="btn btn-primary">Registrarse</a>
+					</li>
+					<li>
+						<button type="button" class="btn btn-link">Link</button>
+					</li>-->
+				</ul>
+				</div>
 			</div>
-		</div>
+		</nav>
 		
 		<!--CUERPO-->
 		<div class="container-fluid">
@@ -239,35 +292,49 @@
 		</div>
 	</div>
 </body>	
+
 <footer> 
-	<!--<div name="menu" class="navbar navbar-inverse">
-			<header class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><img src="img/oie_transparent.png"></a>
-				<p class="navbar-brand"><a href="principal.html">TICOVENTURAS</a></p>
-			</header>
-			<div class="collapse navbar-collapse">
-				<nav>
-					<ul class="nav navbar-nav">
-						<li><a href="index.php" class="homeIcon">Home</a></li>
-						<li><a href="#About">About</a></li>
-						<li><a href="#Services">Services</a></li>
+	<div class="backgroundLightBlue">	
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2 col-md-offset-1">
+					<h3>Sobre nosotros</h3>
+					<a href="#">&iquest;Qui&eacute;nes somos?</a>			
+				</div>
+				
+				<div class="col-md-2">
+					<h3>Nuestros servicios</h3>
+					<a href="#">Paquetes</a>
+					<br>
+					<a href="#">Promociones</a>
+				</div>
+				
+				<div class="col-md-2">
+					<h3>Contacto</h3>
+					<p>San Jos&eacute;, Costa Rica
+						Tel&eacute;fono: (506) 22614825
+						info@ticoventuras.com
+					</p>
+				</div>
+				
+				<div class="col-md-2">
+					<h3>Horario</h3>
+					<p>Lunes a S&aacute;bado de 8am a 6pm</p>
+				</div>
+				
+				<div class="col-md-2">
+					<h3>S&iacute;guenos en</h3>
+					<ul>
+						<li><a href="#" class="icon-button linkedin"><i class="icon-linkedin"></i><span> Linkedin</span></a></li>
+						<li><a href="#" class="icon-button pinterest"><i class="icon-pinterest"></i><span> Pinterest</span></a></li>
+						<li><a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span> Twitter</span></a></li>
+						<li><a href="#" class="icon-button facebook"><i class="icon-facebook"></i><span> Facebook</span></a></li>
+						<li><a href="#" class="icon-button google-plus"><i class="icon-google-plus"></i><span> Google +</span></a></li>
 					</ul>
-				</nav>
-				<ul class="nav navbar-nav navbar-center">
-					<li><a href="#" class="icon-button linkedin"><i class="icon-linkedin"></i><span></span></a></li>
-					<li><a href="#" class="icon-button pinterest"><i class="icon-pinterest"></i><span></span></a></li>
-					<li><a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a></li>
-					<li><a href="#" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a></li>
-					<li><a href="#" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a></li>
-				</ul>
+				</div>
 			</div>
-		</div>-->
+		</div>
+	</div>
 </footer>
 	
 	
