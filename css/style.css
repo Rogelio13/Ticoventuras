@@ -131,6 +131,10 @@ footer a:active {color: #FFFFFF;}
 	padding-top: 35px;
 }
 
+.modal-footer{
+	margin-top:40%;
+}
+
 #promociones{
 	padding-bottom: 40px;
 	padding-top: 40px;
