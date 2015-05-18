@@ -274,7 +274,25 @@ var resetForm = function(){ /*limpia los campos y áreas de error o éxito al da
     });
 }
 
+var iniciar_telefonos=function(){
+	
+	$("#tel").intlTelInput({
+        //allowExtensions: true,
+        //autoFormat: false,
+        //autoHideDialCode: false,
+        //autoPlaceholder: false,
+        //defaultCountry: "auto",
+        //ipinfoToken: "yolo",
+        //nationalMode: false,
+        //numberType: "MOBILE",
+        //onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+        //preferredCountries: ['cn', 'jp'],
+        utilsScript: "lib/libphonenumber/build/utils.js"
+     });
+}
+
 function readyValidar( jQuery ) { /*ejecuta los métodos que valida*/
+	iniciar_telefonos();
 	validarForm();
 	validarSubmit();
 	resetForm();
