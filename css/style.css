@@ -1,8 +1,4 @@
 @charset "UTF-8"; 
-/*establece a todo el documento una medida de pixeles base especifica*/
-*{
-	font-size: 14px; 
-} 
 
 @font-face {
 	font-family: AlexBrush;
@@ -35,6 +31,7 @@ footer a:active {color: #FFFFFF;}
 
 .titulo{
 	margin-top: 2%;
+	font-size: 3em;
 }
 
 .menu{
@@ -43,12 +40,12 @@ footer a:active {color: #FFFFFF;}
 
 .blue{
 	color: #017B99 !important;
-	font-size: 80px !important;
+	font-size: 2em;
 }
 
 .red{
 	color: #AC0E15;
-	font-size: 80px !important;
+	font-size: 2em;
 }
 
 .header_center{
