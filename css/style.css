@@ -4,29 +4,76 @@
 	font-size: 14px; 
 } 
 
+@font-face {
+	font-family: AlexBrush;
+	src: url(../fonts/AlexBrush-Regular.ttf);
+}
+
+footer h3 {
+	color: #FFFFFF;
+}
+
+footer p {
+	color: #FFFFFF;
+}
+
+footer ul li{
+	color: #FFFFFF;
+}
+
+footer a:link {color: #FFFFFF;}
+footer a:visited {color: #FFFFFF;}
+footer a:hover {color: #FFFFFF;}
+footer a:focus {color: #FFFFFF;}
+footer a:active {color: #FFFFFF;}
+
+
+.logo{
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.titulo{
+	margin-top: 2%;
+}
+
+.menu{
+	background-color: #AC0E15;
+}
+
+.blue{
+	color: #017B99 !important;
+	font-size: 80px !important;
+}
+
+.red{
+	color: #AC0E15;
+	font-size: 80px !important;
+}
+
+.header_center{
+	text-align: center;
+}
+
+.AlexBrushfont{
+	font-family: AlexBrush;
+}
+
 .carousel-inner > .item > img,
 		  .carousel-inner > .item > a > img {
 			  margin: auto;
 			  overflow:hidden;
 			  height: 300px;
 		  }
+		  
 
-.altura{
-	height: 100px;
-}		  
-
-#myCarousel{
-	margin: auto;
-	overflow: hidden;
-	height: 300px;
-}
  
 .backgroundLightGray{
 	background-color: #F0F0F0;
 }
 
 .backgroundLightBlue{
-	background-color: #1569C7;
+	background-color: #017B99;
 }
 
 .backgroundGreen{
@@ -38,7 +85,7 @@
 }
 
 .fontLightBlue{
-	color: #1569C7;
+	color: #017B99;
 }
 
 .fontGreen{
@@ -92,24 +139,11 @@
 	padding-top: 40px;
 }
 
-footer h3 {
-	color: #FFFFFF;
+#myCarousel{
+	margin: auto;
+	overflow: hidden;
+	height: 300px;
 }
-
-footer p {
-	color: #FFFFFF;
-}
-
-footer ul li{
-	color: #FFFFFF;
-}
-
-footer a:link {color: #FFFFFF;}
-footer a:visited {color: #FFFFFF;}
-footer a:hover {color: #FFFFFF;}
-footer a:focus {color: #FFFFFF;}
-footer a:active {color: #FFFFFF;}
-
 
 /* Media querry para el plugin de números telefonicos*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
