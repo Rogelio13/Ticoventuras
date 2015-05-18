@@ -5,6 +5,12 @@
 	src: url(../fonts/AlexBrush-Regular.ttf);
 }
 
+aside{
+	margin-left: 2%;
+	border: 1px solid #d4d4d4;
+	background-color: white;
+}
+
 footer h3 {
 	color: #FFFFFF;
 }
@@ -55,16 +61,7 @@ footer a:active {color: #FFFFFF;}
 .AlexBrushfont{
 	font-family: AlexBrush;
 }
-
-.carousel-inner > .item > img,
-		  .carousel-inner > .item > a > img {
-			  margin: auto;
-			  overflow:hidden;
-			  height: 300px;
-		  }
-		  
-
- 
+	
 .backgroundLightGray{
 	background-color: #F0F0F0;
 }
@@ -140,15 +137,6 @@ footer a:active {color: #FFFFFF;}
 	padding-top: 40px;
 }
 
-#myCarousel{
-	margin: auto;
-	overflow: hidden;
-	height: 300px;
-}
-
-/* Media querry para el plugin de números telefonicos*/
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .iti-flag {
-    background-image: url("lib/intl-tel-input-master/build/img/flags@2x.png");
-  }
+#tel{
+	width: 100%;
 }
