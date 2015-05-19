@@ -81,7 +81,7 @@ footer a:active {color: #FFFFFF;}
 .fontLightBlue{
 	color: #017B99;
 }
-
+ 
 .fontGreen{
 	color: #109812;
 }
@@ -94,6 +94,11 @@ footer a:active {color: #FFFFFF;}
 	text-align: center;
 }
 
+#areaBuscador{
+	border: 1px solid #d4d4d4;
+	background-color: white;
+}
+
 /*clase para el disenio del marco contenedor de los tabs*/
 /*El padding en .tab-content hace que el contenido no sea presionado contra los nuevos bordes en la derecha e izquierda.*/
 .tab-content {
@@ -101,6 +106,7 @@ footer a:active {color: #FFFFFF;}
     border-right: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
     padding: 10px;
+	margin-bottom: 25px;
 }
 
 /*establezco aspectos del padding que me ayuden a quedar mejor con el mock up*/
