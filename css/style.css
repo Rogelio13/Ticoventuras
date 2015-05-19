@@ -41,7 +41,7 @@ footer a:active {color: #FFFFFF;}
 }
 
 .menu{
-	background-color: #AC0E15;
+	background-color: #074349;
 }
 
 .blue{
@@ -67,7 +67,7 @@ footer a:active {color: #FFFFFF;}
 }
 
 .backgroundLightBlue{
-	background-color: #017B99;
+	background-color: #074349;
 }
 
 .backgroundGreen{
@@ -130,6 +130,23 @@ footer a:active {color: #FFFFFF;}
 
 .modal-footer{
 	margin-top:5%;
+}
+
+.carousel-inner > .item > img,
+		  .carousel-inner > .item > a > img {
+			  margin: auto;
+			  width: 100%;
+			  height: 50%;
+		  }
+
+#myCarousel3{
+	overflow: hidden;
+	heigth: 100px;
+}
+
+#myCarousel4{
+	overflow: hidden;
+	heigth: 100px;
 }
 
 #promociones{
