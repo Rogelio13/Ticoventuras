@@ -1,102 +1,117 @@
 @charset "UTF-8"; 
 
+/*Define la fuente del título*/
 @font-face {
 	font-family: AlexBrush;
 	src: url(../fonts/AlexBrush-Regular.ttf);
 }
 
+/*Define el color del borde, background del aside*/
 aside{
 	margin-left: 2%;
 	border: 1px solid #d4d4d4;
 	background-color: white;
 }
 
+/*Define el color de las letras del footer*/
 footer h3 {
 	color: #FFFFFF;
 }
 
+/*Define el color de las letras del footer*/
 footer p {
 	color: #FFFFFF;
 }
 
+/*Define el color de las letras del footer*/
 footer ul li{
 	color: #FFFFFF;
 }
 
+/*Define el color de las letras del footer*/
 footer a:link {color: #FFFFFF;}
 footer a:visited {color: #FFFFFF;}
 footer a:hover {color: #FFFFFF;}
 footer a:focus {color: #FFFFFF;}
 footer a:active {color: #FFFFFF;}
 
-
+/*Acomoda el logo en la página*/
 .logo{
 	margin-top: 1%;
 	margin-bottom: 1%;
 }
 
+/*Acomoda el titulo*/
 .titulo{
 	margin-top: 2%;
 	font-size: 3em;
 }
 
+/*Define el color del fondo del menú*/
 .menu{
 	background-color: #074349;
 }
 
+/*Define el color de las letras del primer parte del titulo*/
 .blue{
 	color: #27676D !important;
 	font-size: 2em;
 }
 
+/*Define el color de las letras de la segunda parte del titulo*/
 .red{
 	color: #B4AE3F;
 	font-size: 2em;
 }
 
+/*Alinea el texto en el centro*/
 .header_center{
 	text-align: center;
 }
 
+/*Define el tipo de letra de la clase AlexBrushfont(En el título)*/
 .AlexBrushfont{
 	font-family: AlexBrush;
 }
 	
+/*Define el color del fondo gris*/
 .backgroundLightGray{
 	background-color: #F0F0F0;
 }
 
+/*Define el color del fondo celeste*/
 .backgroundLightBlue{
 	background-color: #074349;
 }
 
+/*Define el color del fondo verde*/
 .backgroundGreen{
 	background-color: #22E925;
 }
 
+/*Define el color del fondo blanco*/
 .backgroundWhite{
 	background-color: #FFFFFF;
 }
 
+/*Define el color de la fuente celeste*/
 .fontLightBlue{
 	color: #017B99;
 }
  
+ /*Define el color de la fuente verde*/
 .fontGreen{
 	color: #109812;
 }
 
+/*Espacios requeridos*/
 .required{
 	color: red;
 }
 
+/*Centra el texto*/
 .centrar{
 	text-align: center;
-}
-
-#areaBuscador{
-	border: 1px solid #d4d4d4;
-	background-color: white;
 }
 
 /*clase para el disenio del marco contenedor de los tabs*/
@@ -138,6 +153,7 @@ footer a:active {color: #FFFFFF;}
 	margin-top:5%;
 }
 
+/*Ajusto el tamaño de las imagenes del carrusel*/
 .carousel-inner > .item > img,
 		  .carousel-inner > .item > a > img {
 			  margin: auto;
@@ -145,11 +161,13 @@ footer a:active {color: #FFFFFF;}
 			  height: 50%;
 		  }
 
+/*Ajusto el tamaño del carrusel*/
 #myCarousel3{
 	overflow: hidden;
 	heigth: 100px;
 }
 
+/*Ajusto el tamaño del carrusel*/
 #myCarousel4{
 	overflow: hidden;
 	heigth: 100px;
@@ -162,4 +180,10 @@ footer a:active {color: #FFFFFF;}
 
 #tel{
 	width: 100%;
+}
+
+/*Define el estilo del area del buscador*/
+#areaBuscador{
+	border: 1px solid #d4d4d4;
+	background-color: white;
 }
